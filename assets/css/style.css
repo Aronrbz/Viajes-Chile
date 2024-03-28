@@ -34,7 +34,7 @@ body {
 
 .carousel {
     margin-top: -56px;
-    /* con esto subo el carousel o podria haber creado el nav con margin-botttom con valores negativos */
+    /* con esto subo el carousel o podria haber creado el navbar con margin-botttom con valores negativos */
 }
 
 /* fuente de google */
@@ -111,7 +111,7 @@ body {
     #quienes-somos h2,
     #quienes-somos .col-md-4 {
         display: none;
-        /* Oculta la sección completa en pantallas pequeñas */
+        /* Esto nos permite cultar la sección completa en pantallas pequeñas*/
     }
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 #destacados .card-img-top {
-    height: 200px;
+    height: 150px;
     /* Fija un alto para las imágenes, ajusta según sea necesario */
     object-fit: cover;
     /* Asegura que la imagen cubra todo el espacio disponible */
@@ -148,6 +148,66 @@ body {
 
 @media (max-width: 768px) {
     #destacados .card {
-        /* Aquí puedes ajustar el estilo de las tarjetas para pantallas pequeñas si es necesario */
+        /* ajuste del estilo de las tarjetas para pantallas pequeñas*/
     }
+}
+
+
+/*Seccion contactanos*/
+
+#contacto {
+    background-color: #000;
+    /* Fondo negro para la sección de contacto */
+    color: #fff;
+    /* Texto blanco para la sección de contacto */
+    padding: 4rem 0;
+    /* Espacio arriba y abajo */
+}
+
+#contacto .form-label {
+    margin-bottom: .5rem;
+    /* Espacio debajo de la etiqueta */
+}
+
+#contacto .form-control {
+    background-color: white;
+    /* Fondo blanco para los campos de entrada */
+    color: black;
+    /* Texto negro para los campos de entrada */
+    border: 1px solid #fff;
+    /* Borde blanco para los campos de entrada */
+    margin-bottom: 1rem;
+    /* Espacio debajo de cada campo de entrada */
+}
+
+
+#contacto .btn-primary {
+    background-color: #17a2b8;
+    border: none;
+    padding: .5rem 2rem;
+    display: block;
+    width: auto;
+    margin-left: 0;
+
+}
+
+@media (max-width: 768px) {
+
+    #contacto .form-control,
+    #contacto .btn-primary {
+        width: 100%;
+    }
+}
+
+
+/*Footer final*/
+
+footer.bg-primary {
+    background-color: #17a2b8 !important;
+    /* color del footer */
+}
+
+footer i {
+    font-size: 1.2rem;
+    /* Tamaño de los íconos de las redes sociales */
 }
