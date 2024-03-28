@@ -146,11 +146,6 @@ body {
     /* Color del texto de las tarjetas */
 }
 
-@media (max-width: 768px) {
-    #destacados .card {
-        /* ajuste del estilo de las tarjetas para pantallas pequeñas*/
-    }
-}
 
 
 /*Seccion contactanos*/
