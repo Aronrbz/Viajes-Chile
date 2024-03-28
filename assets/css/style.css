@@ -1,0 +1,11 @@
+body {
+    font-family: "Raleway", "Open Sans";
+    color: white;
+    background-color: black;
+
+}
+
+.navbar {
+    background-color: transparent !important;
+    color: white;
+}
