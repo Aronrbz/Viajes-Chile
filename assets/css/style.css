@@ -1,11 +1,153 @@
-body {
-    font-family: "Raleway", "Open Sans";
-    color: white;
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #000;
+    /* Fondo negro para todo el cuerpo de la página */
+    color: #fff;
+    /* Texto blanco para todo el cuerpo de la página */
+    padding-top: 56px;
 }
 
 .navbar {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar.fixed-top {
     background-color: transparent !important;
-    color: white;
+    z-index: 1030 !important;
+}
+
+.navbar.fixed-top .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar.fixed-top .navbar-brand {
+    color: white !important;
+}
+
+
+
+.carousel {
+    margin-top: -56px;
+    /* con esto subo el carousel o podria haber creado el nav con margin-botttom con valores negativos */
+}
+
+/* fuente de google */
+.open-sans-uniquifier {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+
+
+/*Seccion quienes somos*/
+
+
+#quienes-somos {
+    color: #fff;
+    /* Texto blanco */
+    background-color: #000;
+    /* Fondo negro */
+    padding: 4rem 0;
+    /* Espacio arriba y abajo */
+}
+
+#quienes-somos h2 {
+    color: #fff;
+    /* Título blanco */
+    margin-bottom: 2rem;
+    /* Espacio debajo del título */
+}
+
+#quienes-somos .col-md-4 {
+    margin-bottom: 1rem;
+    /* Espacio debajo de cada columna */
+}
+
+#quienes-somos p {
+    background-color: #000000;
+    /* Fondo de los párrafos */
+    padding: 1rem;
+    /* Espacio interno de los párrafos */
+    border-radius: 0.5rem;
+    /* Bordes redondeados para los párrafos */
+}
+
+#quienes-somos button {
+    background-color: #17a2b8;
+    /* Fondo del botón */
+    border: none;
+    /* Sin bordes */
+    color: #fff;
+    /* Icono blanco */
+    width: 100%;
+    /* Ancho al 100% del contenedor */
+    margin-bottom: 1rem;
+    /* Espacio debajo del botón */
+    padding: 1rem;
+    /* Espacio interno del botón */
+    border-radius: 0.5rem;
+    /* Bordes redondeados para el botón */
+}
+
+#quienes-somos button i {
+    margin-right: 0.5rem;
+    /* Espacio a la derecha del ícono */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    #quienes-somos,
+    #quienes-somos h2,
+    #quienes-somos .col-md-4 {
+        display: none;
+        /* Oculta la sección completa en pantallas pequeñas */
+    }
+}
+
+/*Seccion destacados*/
+
+#destacados {
+    background-color: #000;
+    /* Fondo oscuro para la sección destacados */
+}
+
+#destacados .card {
+    border: none;
+    /* Quita el borde de las tarjetas */
+    background-color: #17a2b8;
+    /* Fondo para cada tarjeta */
+}
+
+#destacados .card-img-top {
+    height: 200px;
+    /* Fija un alto para las imágenes, ajusta según sea necesario */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el espacio disponible */
+}
+
+#destacados .card-title {
+    color: #ffffff;
+    /* Color para los títulos de las tarjetas */
+}
+
+#destacados .card-text {
+    color: #fff;
+    /* Color del texto de las tarjetas */
+}
+
+@media (max-width: 768px) {
+    #destacados .card {
+        /* Aquí puedes ajustar el estilo de las tarjetas para pantallas pequeñas si es necesario */
+    }
 }
