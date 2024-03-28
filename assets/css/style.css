@@ -23,13 +23,18 @@ body {
 }
 
 .navbar.fixed-top .navbar-nav .nav-link {
-    color: white !important;
+    color: white;
 }
 
 .navbar.fixed-top .navbar-brand {
-    color: white !important;
+    color: white;
 }
 
+.navbar-collapse a {
+    text-align: right;
+    /* Con esta propiedad, las opciones del navbar hacia la derecha, ya que si no la agrego, el navbar de escritorio
+estara a la derecha, pero al ahcerlo movil, las opciones se van a la izquierda*/
+}
 
 
 .carousel {
@@ -88,7 +93,7 @@ body {
     border: none;
     /* Sin bordes */
     color: #fff;
-    /* Icono blanco */
+    /* Iconos blancos */
     width: 100%;
     /* Ancho al 100% del contenedor */
     margin-bottom: 1rem;
@@ -104,16 +109,6 @@ body {
     /* Espacio a la derecha del ícono */
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-
-    #quienes-somos,
-    #quienes-somos h2,
-    #quienes-somos .col-md-4 {
-        display: none;
-        /* Esto nos permite cultar la sección completa en pantallas pequeñas*/
-    }
-}
 
 /*Seccion destacados*/
 
@@ -131,9 +126,8 @@ body {
 
 #destacados .card-img-top {
     height: 150px;
-    /* Fija un alto para las imágenes, ajusta según sea necesario */
     object-fit: cover;
-    /* Asegura que la imagen cubra todo el espacio disponible */
+    /* con esto, la imagen cubre todo el espacio disponible del card*/
 }
 
 #destacados .card-title {
@@ -186,15 +180,6 @@ body {
 
 }
 
-@media (max-width: 768px) {
-
-    #contacto .form-control,
-    #contacto .btn-primary {
-        width: 100%;
-    }
-}
-
-
 /*Footer final*/
 
 footer.bg-primary {
@@ -205,4 +190,22 @@ footer.bg-primary {
 footer i {
     font-size: 1.2rem;
     /* Tamaño de los íconos de las redes sociales */
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    #quienes-somos,
+    #quienes-somos h2,
+    #quienes-somos .col-md-4 {
+        display: none;
+        /* Esto me permite cultar la sección completa de "Quienes somos" en pantallas pequeñas gracias al none*/
+    }
+
+    #contacto .form-control,
+    #contacto .btn-primary {
+        width: 100%;
+        /* Esto me permite dejar el formulario alineado al tamaño de la pagina*/
+    }
 }
